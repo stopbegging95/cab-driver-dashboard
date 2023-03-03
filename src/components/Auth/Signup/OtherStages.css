@@ -1,0 +1,309 @@
+.backIcon {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    padding: 1%;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #c5c5c5;
+}
+
+form button {
+    width: 50%;
+    margin: 10% auto 0;
+    background-color: #10ad5e;
+    color: white;
+}
+
+form button:hover {
+    background-color: white;
+    color: #10ad5e;
+    border: 1px solid #10ad5e;
+}
+
+/* SECOND STAGE STYLINGS */
+.sndStage,
+.frthStage,
+.fifth {
+    width: 50vw;
+    margin: 2% auto;
+}
+
+.sndStage img,
+.frthStage img,
+.fifth img {
+    width: 25%;
+    margin: 0 auto 5%;
+}
+
+.sndStage form,
+.frthStage form,
+.fifth form {
+    padding: 5% 5% 1%;
+    background-color: ghostwhite;
+    border-radius: 20px;
+}
+
+.sndStage form h3 {
+    padding: 2% 0;
+    border-bottom: 2px solid grey;
+    margin: 2% 0 5%;
+}
+
+.sndStage form h3 span {
+    color: #10ad5e;
+}
+
+.sndStage input,
+.sndStage select,
+.sndStage textarea {
+    border: 1px solid gainsboro;
+    background-color: white;
+    display: block;
+    width: 100%;
+    padding: 2%;
+    margin: 2% auto;
+}
+
+.sndStage select {
+    padding: 0 2%;
+}
+
+.sndStage textarea {
+    resize: none;
+    height: 100px;
+}
+
+.sndStage form button {
+    margin: 5% auto 0;
+}
+
+/* END OF SECOND STAGE STYLING */
+
+/* FOURTH STAGE STYLING */
+.frthStage,
+.fifth {
+    margin: 5% auto;
+}
+
+.frthStage form,
+.fifth form {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.frthStage form select {
+    display: block;
+    width: 75%;
+    margin: 5% auto;
+}
+
+.frthStage form div {
+    position: relative;
+    width: 20%;
+    height: 100px;
+    padding: 2% 3%;
+    border: 1px dashed #10ad5e;
+}
+
+.frthStage form div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.frthStage form div .uploadIcon {
+    cursor: pointer;
+    position: absolute;
+    bottom: 25%;
+    right: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 50%;
+    height: 50%;
+    color: white;
+    background-color: #10ad5e;
+    z-index: 1;
+}
+
+.frthStage form section {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    height: 120px;
+}
+
+.frthStage form section div {
+    width: 30%;
+    height: 100%;
+}
+
+.frthStage form section div small {
+    display: block;
+    text-align: center;
+}
+
+/* END OF FOURTH STAGE STYLING */
+
+/* FIFTH STAGE STYLING */
+.fifth form {
+    justify-content: space-evenly;
+}
+
+.fifth form div {
+    width: 210px;
+    height: 210px;
+    position: relative;
+    border-radius: 50%;
+}
+
+.fifth form img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fifth form .profImgUp {
+    position: absolute;
+    cursor: pointer;
+    border-radius: 50%;
+    bottom: 5%;
+    right: 0;
+    padding: 5% 6%;
+    background-color: rgb(16, 173, 94);
+    color: white;
+}
+
+/* END OF FIFTH STAGE STYLING */
+
+/* SPINNER IMPORTED STYLES */
+.loader,
+.loader:before,
+.loader:after {
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation: load7 1.8s infinite ease-in-out;
+  animation: load7 1.8s infinite ease-in-out;
+}
+.loader {
+  color: #10ad5e;
+  font-size: 10px;
+  margin: 80px auto;
+  position: relative;
+  text-indent: -9999em;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+.loader:before,
+.loader:after {
+  content: '';
+  position: absolute;
+  top: 0;
+}
+.loader:before {
+  left: -3.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.loader:after {
+  left: 3.5em;
+}
+@-webkit-keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0;
+  }
+}
+@keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0;
+  }
+}
+
+@keyframes lds-grid {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+}
+
+/* END OF SPINNER */
+
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+
+    .sndStage,
+    .frthStage,
+    .fifth {
+        width: 60vw;
+    }
+
+    .frthStage,
+    .fifth {
+        width: 75vw;
+    }
+
+    .fifth form div {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 425px) {
+    form button {
+        width: 75%;
+    }
+
+    .backIcon {
+        padding: 2% 3%;
+        top: 3%;
+    }
+
+    .sndStage,
+    .frthStage,
+    .fifth {
+        width: 90vw;
+        margin: 10% auto 0;
+    }
+
+    .frthStage form select {
+        width: 90%;
+    }
+
+    .frthStage form section {
+        width: 90%;
+        height: 80px;
+    }
+
+    .frthStage form div {
+        width: 35%;
+    }
+}

@@ -1,0 +1,90 @@
+
+/* Confirmation Dialog */
+.Modal {
+    position: fixed;
+    width: 99vw;
+    top: 0;
+    height: 100%;
+    left: 0;
+    background-color: #31303394;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    animation: pop 0.2s linear;
+    animation-iteration-count: 1;
+    z-index: 10;
+}
+
+.info {
+    position: absolute;
+    top: 25%;
+    left: 23vw;
+    text-align: center;
+    background-color: #10ad5e;
+    padding: 2rem;
+    width: 50vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+    z-index: 10;
+    animation: pop 0.5s linear;
+}
+.info img {
+  width: 30%;
+  padding: 2rem;
+}
+
+.info input,
+.info select {
+  margin: 2% auto;
+  width: 100%;
+  border: none;
+}
+
+.info input {
+  padding: 0 2%;
+}
+
+.info button {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  margin: 10% auto 0;
+}
+
+.info button:hover {
+  background-color: white;
+  color: #10ad5e;
+}
+
+@media (max-width: 425px) {
+  .info {
+    font-size: medium;
+    padding: 3%;
+    width: 90vw;
+    left: 5vw;
+  }
+  .info img {
+    padding: 10px;
+  }  
+}
+
+
+@keyframes pop {
+    from {
+      /* transform: translateY(100%); */
+      transform: scale(0, 0);
+    }
+    to {
+      /* transform: translateY(0%); */
+      transform: scale(1, 1);
+    }
+  }

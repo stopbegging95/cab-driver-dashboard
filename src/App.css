@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+  background-color: ghostwhite;
+}
+
+::selection {
+  background: #6df5b1;
+  /* WebKit/Blink Browsers */
+}
+
+::-moz-selection {
+  background: #6df5b1;
+  /* Gecko Browsers */
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+  /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #282c34;
+  /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #10ad5e;
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+  border: 3px solid #282c34;
+  /* creates padding around scroll thumb */
+}
+
+.recentDeliveriesCards::-webkit-scrollbar,
+.orderStats::-webkit-scrollbar {
+  height: 6px;
+}
+
+.recentDeliveriesCards::-webkit-scrollbar-track,
+.orderStats::-webkit-scrollbar-track {
+  background: #282c34;
+}
+
+.recentDeliveriesCards::-webkit-scrollbar-thumb,
+.orderStats::-webkit-scrollbar-thumb {
+  background: #10ad5e;
+  border-radius: 10px;
+}
+
+*::-webkit-scrollbar,
+.wHistoryHolder::-webkit-scrollbar,
+.reqDelivery section main .main1::-webkit-scrollbar,
+.supportHistory::-webkit-scrollbar {
+  width: 6px;
+  /* width of the entire scrollbar */
+}
+
+*::-webkit-scrollbar-track,
+.wHistoryHolder::-webkit-scrollbar-track,
+.reqDelivery section main .main1::-webkit-scrollbar-track,
+.supportHistory::-webkit-scrollbar-track {
+  background: #282c34ce;
+  border-radius: 20px;
+}
+
+*::-webkit-scrollbar-thumb,
+.wHistoryHolder::-webkit-scrollbar-thumb,
+.reqDelivery section main .main1::-webkit-scrollbar-thumb,
+.supportHistory::-webkit-scrollbar-thumb {
+  background-color: #10ad5e;
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+img {
+  display: block;
+}
+
+button {
+  display: block;
+  font-weight: 500;
+  padding: 3%;
+  transition: .3s;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: grey !important;
+  color: white !important;
+  cursor: not-allowed;
+}
+
+button:disabled:hover {
+  background-color: grey !important;
+  color: white !important;
+}
+
+input,
+select,
+textarea {
+  height: 35px;
+  border-radius: 10px;
+  caret-color: #10ad5e;
+  font-size: medium;
+}
